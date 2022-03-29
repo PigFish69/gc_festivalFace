@@ -24,6 +24,7 @@ include "../config/config.php";
             <li><a href="<?php echo (PUBLIC_PATH);?>/tickets.php">Tickets</a></li>
             <li><a href="<?php echo (PUBLIC_PATH);?>/lineup.php">Lineup</a></li>
             <li><a href="<?php echo (PUBLIC_PATH);?>/registreren.php">Registreren</a></li>
+            <li><a href="<?php echo (PUBLIC_PATH);?>/bestelhistorie.php">Bestelhistorie</a></li>
         </ul>
     </div>
 </nav>
