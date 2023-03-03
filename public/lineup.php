@@ -2,7 +2,10 @@
 require "header.php";
 require "../config/database.php";
 // Create connection
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+//$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);     //lokaal
+//$mysqli = new mysqli(DB_HOSTcPANEL, DB_USERcPANEL, DB_PASSWORDcPANEL, DB_NAMEcPANEL); //cpannel
+$mysqli = db_connect(); //bijde??
+
 // Check connection
 if ($mysqli->connect_error)
 {
