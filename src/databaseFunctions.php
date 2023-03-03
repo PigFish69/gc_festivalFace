@@ -1,7 +1,11 @@
 <?php
 require "../config/database.php";
 function db_connect() {
-    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    //local
+    //$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+    //cPanel ding
+    $mysqli = new mysqli(DB_HOSTcPANEL, DB_USERcPANEL, DB_PASSWORDcPANEL, DB_NAMEcPANEL);
     return $mysqli;
 
 //    try {
